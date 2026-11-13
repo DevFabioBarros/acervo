@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local tools and cloned services
+.playwright-cli/
+.impeccable/
+firecrawl/
+
+# Scraped pages and local vector indexes
+data/collections/*
+!data/collections/.gitkeep
+data/collection/
+*.faiss
+*.pkl
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

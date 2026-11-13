@@ -1,0 +1,73 @@
+/* Acervo: papel de consulta, tinta escura e vermelho de índice. */
+:root {
+  --ink: #24251f;
+  --muted: #5c5d55;
+  --paper: #f7f6f1;
+  --side: #eeede6;
+  --surface: #fffefa;
+  --line: #d8d6cc;
+  --accent: #bd3e31;
+  --accent-hover: #9f3027;
+  --accent-ink: #ffffff;
+  --soft: #e8e4db;
+  --placeholder: #62635c;
+  color-scheme: light;
+}
+
+.library-empty { max-width: 42rem; margin: 2.5rem 0 1.2rem; }
+.empty-chat { border-top: 1px solid var(--line); margin-top: 2.2rem; padding-top: 1.3rem; max-width: 42rem; }
+.library-empty h2, .empty-chat h2 { margin: 0 0 .45rem; }
+.library-empty p, .empty-chat p { margin: 0; color: var(--muted); }
+
+.stApp, [data-testid="stBottom"] { background: var(--paper); color: var(--ink); font-family: "IBM Plex Sans", sans-serif; }
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stMainBlockContainer"] { max-width: 1120px; padding: 2.3rem 3rem 6rem; }
+[data-testid="stSidebar"] { background: var(--side); border-right: 1px solid var(--line); }
+[data-testid="stSidebar"] > div:first-child { padding: 1.6rem 1.2rem 1.2rem; }
+[data-testid="stSidebar"] * { color: var(--ink); }
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color: var(--muted); }
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h3 { font-size: 1.08rem; font-weight: 650; letter-spacing: -.02em; margin: .2rem 0 .25rem; }
+[data-testid="stSidebar"] hr { border-color: var(--line); margin: 1.2rem 0; }
+h1, h2, h3 { color: var(--ink); font-family: "IBM Plex Sans", sans-serif !important; letter-spacing: -.025em; }
+h1 { font-size: 1.85rem !important; line-height: 1.2 !important; font-weight: 650 !important; margin: 0 0 .35rem !important; }
+h2 { font-size: 1.35rem !important; font-weight: 620 !important; }
+p, [data-testid="stCaptionContainer"] { color: var(--muted); }
+label, [data-testid="stWidgetLabel"] p { color: var(--ink) !important; font-size: .93rem; }
+input, textarea, [data-baseweb="select"] * { color: var(--ink) !important; }
+input::placeholder, textarea::placeholder { color: var(--placeholder) !important; opacity: 1 !important; }
+.stTextInput input, [data-testid="stChatInput"] { background: var(--surface); border-color: var(--line); border-radius: 3px; min-height: 46px; }
+[data-testid="stChatInput"] textarea { background: var(--surface); color: var(--ink) !important; }
+[data-baseweb="popover"], [data-baseweb="menu"], [role="listbox"] { background: var(--surface); color: var(--ink); }
+[role="option"] { color: var(--ink) !important; }
+.stButton > button { min-height: 42px; border-radius: 3px; border: 1px solid var(--line); background: transparent; color: var(--ink); font-weight: 560; transition: background-color .16s ease, border-color .16s ease, color .16s ease; }
+[data-testid="stFormSubmitButton"] button { min-height: 42px; border-radius: 3px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 650; transition: background-color .16s ease, border-color .16s ease, color .16s ease; }
+.stButton > button:hover { background: var(--soft); border-color: var(--ink); color: var(--ink); }
+[data-testid="stFormSubmitButton"] button:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--accent-ink); }
+[data-testid="stFormSubmitButton"] button * { color: var(--accent-ink) !important; }
+[data-testid="stFormSubmitButton"] button:disabled { background: var(--soft); border-color: var(--line); color: var(--muted); }
+.stButton > button:focus-visible, [data-testid="stFormSubmitButton"] button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+[data-testid="stSidebar"] .stButton > button { width: 100%; min-height: 43px; text-align: left; padding: 0 .85rem; }
+[data-testid="stSidebar"] button > div { flex: 1; width: 100%; justify-content: flex-start; }
+[data-testid="stSidebar"] button [data-testid="stMarkdownContainer"] { width: 100%; }
+[data-testid="stSidebar"] button p { width: 100%; margin: 0; text-align: left !important; }
+[data-testid="stSidebar"] [data-testid="stBaseButton-primary"], [data-testid="stFormSubmitButton"] [data-testid="stBaseButton-primary"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); font-weight: 650; }
+[data-testid="stSidebar"] [data-testid="stBaseButton-primary"] *, [data-testid="stFormSubmitButton"] [data-testid="stBaseButton-primary"] * { color: var(--accent-ink) !important; }
+[data-testid="stSidebar"] [data-testid="stBaseButton-primary"]:hover, [data-testid="stFormSubmitButton"] [data-testid="stBaseButton-primary"]:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--accent-ink); }
+[data-testid="stSidebar"] [class*="st-key-collection_"] button { min-height: 42px; display: flex; justify-content: flex-start; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0 .35rem; }
+[data-testid="stSidebar"] [class*="st-key-collection_"] button::before { content: ""; width: 7px; height: 7px; flex: 0 0 7px; margin-right: 11px; border: 1px solid var(--muted); border-radius: 50%; }
+[data-testid="stSidebar"] [class*="st-key-collection_"] button[kind="primary"]::before { background: var(--accent); border-color: var(--accent); }
+[data-testid="stSidebar"] [class*="st-key-collection_"] button:hover { background: var(--soft); }
+[data-testid="stSidebar"] [class*="st-key-collection_"] button[kind="primary"] { background: transparent; border-bottom: 1px solid var(--accent); color: var(--accent); font-weight: 700; }
+[data-testid="stSidebar"] [class*="st-key-collection_"] button[kind="primary"]:hover { background: var(--soft); color: var(--accent-hover); }
+[class*="st-key-main_collection_"] { max-width: 28rem; }
+[class*="st-key-main_collection_"] button { width: auto; min-width: 12rem; text-align: left; }
+[data-testid="stSidebar"] [data-testid="stToggle"] label { color: var(--muted) !important; }
+[data-testid="stSidebar"] [data-testid="stToggle"] [role="switch"][aria-checked="true"] { background: var(--accent) !important; border-color: var(--accent) !important; }
+[data-testid="stChatMessage"] { border: 0; border-bottom: 1px solid var(--line); background: transparent; padding: 1rem 0; }
+[data-testid="stChatInput"] { border: 1px solid var(--line); box-shadow: none; }
+[data-testid="stAlert"] { background: var(--soft); color: var(--ink); border: 0; }
+[data-testid="stForm"] { border-top: 1px solid var(--line); padding-top: 1.15rem; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { scroll-margin: 1rem; }
+@media (prefers-reduced-motion: reduce) { .stButton > button, [data-testid="stFormSubmitButton"] button { transition: none; } }
+@media (max-width: 800px) { [data-testid="stMainBlockContainer"] { padding: 1.5rem 1rem 5rem; } }
